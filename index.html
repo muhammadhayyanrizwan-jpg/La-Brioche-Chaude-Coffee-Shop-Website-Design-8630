@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/0jrJtJ0r/fav-icon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>La Brioche Chaude - Authentic French Café | Premium Coffee & Pastries</title>
+    <meta name="description" content="Experience authentic French café culture at La Brioche Chaude. Enjoy premium coffee, fresh croissants, and traditional pastries in the heart of Paris. Open daily with exceptional service." />
+    <meta name="keywords" content="French café, coffee shop, croissants, pastries, Paris café, premium coffee, authentic French food, bakery, espresso, café au lait" />
+    <meta name="author" content="La Brioche Chaude" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="La Brioche Chaude - Authentic French Café" />
+    <meta property="og:description" content="Experience authentic French café culture with premium coffee and fresh pastries in Paris." />
+    <meta property="og:image" content="https://i.ibb.co/GvdJj6fK/img-036.png" />
+    <meta property="og:url" content="https://labriochechaude.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="La Brioche Chaude - Authentic French Café" />
+    <meta name="twitter:description" content="Experience authentic French café culture with premium coffee and fresh pastries in Paris." />
+    <meta name="twitter:image" content="https://i.ibb.co/GvdJj6fK/img-036.png" />
+    
+    <!-- Additional SEO Tags -->
+    <meta name="geo.region" content="FR-75" />
+    <meta name="geo.placename" content="Paris" />
+    <meta name="geo.position" content="48.8566;2.3522" />
+    <meta name="ICBM" content="48.8566, 2.3522" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#8B4513" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="La Brioche Chaude" />
+    <link rel="apple-touch-icon" href="https://i.ibb.co/0jrJtJ0r/fav-icon.jpg" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://labriochechaude.com" />
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "La Brioche Chaude",
+      "image": "https://i.ibb.co/GvdJj6fK/img-036.png",
+      "description": "Authentic French café serving premium coffee and fresh pastries in Paris",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Rue de la Paix",
+        "addressLocality": "Paris",
+        "addressCountry": "FR",
+        "postalCode": "75001"
+      },
+      "telephone": "+33621518299",
+      "url": "https://labriochechaude.com",
+      "openingHours": [
+        "Mo-Fr 07:00-20:00",
+        "Sa-Su 08:00-21:00"
+      ],
+      "servesCuisine": "French",
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "150"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
